@@ -17,12 +17,13 @@ public class Group {
     public String toString(){
         return Arrays.toString(students);
     }
+
     public static void main(String[] args){
-        Student s1 = new Student("Ivan", 32);
-        Student s2 = new Student("Dima", 32);
+        Student s1 = new Student("Ivan", "App math",  32);
+        Student s2 = new Student("Dima", "App math",  32);
         Group g1 = new Group(new Student[]{s1, s2});
 //        g1.addStudent(s2);
-        System.out.println(g1);
+//        System.out.println(g1);
     }
 
 }
