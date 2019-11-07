@@ -15,7 +15,6 @@ public class Lessons {
         this.day = day;
     }
 
-
     public void addGroup(Group group) {
         groups = Arrays.copyOf(groups, groups.length + 1);
         groups[groups.length] = group;
@@ -35,29 +34,27 @@ public class Lessons {
                 time +"%n");
     }
 
-
-
     public static void main(String[] args) {
 
-        Student S1 = new Student("Ivan", "App math",  32);
-        Student S2 = new Student("Dima", "App math",  32);
-        Student S3 = new Student("Sasha", "App math",  31);
-        Student S4 = new Student("Max", "App math",  31);
+        Student s1 = new Student("Ivan", "App math",  32);
+        Student s2 = new Student("Dima", "App math",  32);
+        Student s3 = new Student("Sasha", "App math",  31);
+        Student s4 = new Student("Max", "App math",  31);
 
-        Group g1 = new Group( new Student[] {S1, S2});//создали группу, в которую поместили студента
-        Group g2 = new Group( new Student[] {S3, S4});
+        Group g1 = new Group( new Student[] {s1, s2});//создали группу со студентами s1,s2
+        Group g2 = new Group( new Student[] {s3, s4});
 
-        Tutor E1 = new Tutor("Kostenko","Math Logic");
-        Tutor E2 = new Tutor ("Podkolzin","Delphi");
+        Tutor tut1 = new Tutor("Kostenko","Math Logic");
+        Tutor tut2 = new Tutor ("Podkolzin","Delphi");
 
-        Lessons T1 = new Lessons(new Group[]{g1},new Tutor[]{E1},"11:30","Monday");
-        Lessons T2 = new Lessons(new Group[]{g1},new Tutor[]{E2},"13:10", "Monday");
+        Lessons les1 = new Lessons(new Group[]{g1},new Tutor[]{tut1},"11:30","Monday");
+        Lessons les2 = new Lessons(new Group[]{g1},new Tutor[]{tut2},"13:10", "Monday");
 
-        Lessons T3 = new Lessons(new Group[]{g2},new Tutor[]{E2},"11:30", "Saturday");
-        Lessons T4 = new Lessons(new Group[]{g2},new Tutor[]{E1},"13:10","Wendsday");
+        Lessons les3 = new Lessons(new Group[]{g2},new Tutor[]{tut2},"11:30", "Saturday");
+        Lessons les4 = new Lessons(new Group[]{g2},new Tutor[]{tut1},"13:10","Wendsday");
 
 
-        System.out.printf("Student:" + S1 + "%n");
-        System.out.printf(T1 +"%n" + T2);
+        System.out.printf("Student:" + s1 + "%n");
+        System.out.printf(les1 +"%n" + les2);
     }
 }

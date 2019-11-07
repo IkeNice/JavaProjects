@@ -14,4 +14,5 @@ public class Student {
     public String toString(){
         return String.format("%n" + "Student's Name: " +name + ". Group: " + groupNum);
     }
+
 }
