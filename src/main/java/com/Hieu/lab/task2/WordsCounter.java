@@ -14,7 +14,7 @@ public class WordsCounter {
         return 0;
     }
 
-    private static int simpleWord(String[] words, String findWord) {
+    public static int simpleWord(String[] words, String findWord) {
         int count=0;
         for(String word : words){
             if (word.equals(findWord)) {
