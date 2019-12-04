@@ -1,29 +1,28 @@
 package com.Hieu.lab.task4;
 
-import java.util.Arrays;
+import java.util.List;
 
 public class Group {
-    private Student[] students;
 
-    public Group(Student[] students){
+    private int idGroup;
+    private List<Student> students;
+    private String groupName;
+
+    public Group(int idGroup, List<Student> students, String groupName){
+        this.idGroup = idGroup;
         this.students = students;
+        this.groupName = groupName;
     }
 
-    public void  addStudent(Student student){
-        students= Arrays.copyOf(students, students.length+1);
-        students[students.length] = student;
-    }
-    @Override
-    public String toString(){
-        return Arrays.toString(students);
+    public int getIdGroup(){
+        return idGroup;
     }
 
-    public static void main(String[] args){
-        Student s1 = new Student("Ivan", "App math",  32);
-        Student s2 = new Student("Dima", "App math",  32);
-        Group g1 = new Group(new Student[]{s1, s2});
-//        g1.addStudent(s2);
-//        System.out.println(g1);
+    public List<Student> getStudents(){
+        return students;
     }
 
+    public String getGroupName() {
+        return groupName;
+    }
 }

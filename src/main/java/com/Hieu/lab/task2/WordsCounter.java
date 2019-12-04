@@ -5,8 +5,7 @@ public class WordsCounter {
         String strl = "asd as as";
         countWord(strl);
     }
-    public static int countWord (String text)
-    {
+    public static int countWord (String text) {
         int  c = 0, a=0;
         String[] words = text.trim().split(" ");
         for(String word : words){
@@ -24,6 +23,4 @@ public class WordsCounter {
         }
         return count;
     }
-
-
 }

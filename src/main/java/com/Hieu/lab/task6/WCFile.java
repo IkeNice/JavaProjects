@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class WCFile {
-    public static void WordsCounter(String fileName, Map<String, Integer> words) throws FileNotFoundException {
+    private static void WordsCounter(String fileName, Map<String, Integer> words) throws FileNotFoundException {
         Scanner file = new Scanner(new File(fileName));
         while (file.hasNext()){
             String word = file.next();
