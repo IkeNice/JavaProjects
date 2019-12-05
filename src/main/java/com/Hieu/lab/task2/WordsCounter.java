@@ -6,7 +6,6 @@ public class WordsCounter {
         countWord(strl);
     }
     public static int countWord (String text) {
-        int  c = 0, a=0;
         String[] words = text.trim().split(" ");
         for(String word : words){
             System.out.println(word+": "+simpleWord(words,word));

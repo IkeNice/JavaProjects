@@ -1,7 +1,6 @@
 package com.Hieu.lab.task4;
 
 
-import java.time.DayOfWeek;
 import java.time.LocalTime;
 
 public class Lessons {
@@ -61,11 +60,9 @@ public class Lessons {
 //    }
     private int idLesson;
     private Tutor tutorName;
-    private String lessonName;
     private Group groupName;
     private Subject subjectName;
     private LocalTime time;
-    private DayOfWeek dayOfWeek;
 
     public Lessons(int idLesson, Group groupName, Tutor tutorName, Subject subjectName, LocalTime time){
         this.idLesson = idLesson;
@@ -81,9 +78,6 @@ public class Lessons {
     public Tutor getTutorName() {
         return tutorName;
     }
-    public String getLessonName() {
-        return lessonName;
-    }
     public Group getGroupName() {
         return groupName;
     }
@@ -93,9 +87,7 @@ public class Lessons {
     public LocalTime getTime() {
         return time;
     }
-    public DayOfWeek getDayOfWeek() {
-        return dayOfWeek;
-    }
+
 
 
 }
