@@ -1,4 +1,4 @@
-package com.Hieu.lab.task8;
+package com.Hieu.lab.task8.ChatUni;
 
 import java.io.BufferedReader;
 import java.io.IOException;
