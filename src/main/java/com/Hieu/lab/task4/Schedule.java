@@ -18,6 +18,18 @@ public class Schedule {
                     lessons1.add(lesson);
             }
         }
+        outPut(lessons1);
         return lessons1;
+    }
+    public void outPut(List<Lessons> lessons){
+        for(Lessons lesson: lessons){
+//            System.out.println("\t |" + lesson.getDayOfWeek() + "|");
+            System.out.println("\t --------------------------------");
+            System.out.println("\t " + lesson.getSubjectName());
+            System.out.println("\t " + lesson.getTime());
+            System.out.println("\t " + lesson.getGroupName().getGroupName());
+            System.out.println("\t " + lesson.getTutorName().getName() );
+            System.out.println();
+        }
     }
 }

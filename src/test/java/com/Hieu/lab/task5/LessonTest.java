@@ -14,8 +14,8 @@ public class LessonTest {
         Student studentAnna = new Student(1, "Anna");
         Student studentIvan = new Student(2, "Ivan");
 
-        Group groupOp1 = new Group(1, Arrays.asList(studentAnna),"On1");
-        Group groupOp2 = new Group(2, Arrays.asList(studentIvan),"On2");
+        Group groupOp1 = new Group(1, Arrays.asList(studentAnna),"Gr1");
+        Group groupOp2 = new Group(2, Arrays.asList(studentIvan),"Gr2");
 
         Tutor tut1= new Tutor(1, "Malihin");
         Tutor tut2= new Tutor(2, "Golovin");
@@ -33,6 +33,6 @@ public class LessonTest {
 
         Assertions.assertEquals(Arrays.asList(op1Lesson1, op2Lesson1), schedule.findLessons(studentAnna));
 
-        System.out.println(schedule);
+//        System.out.println(schedule);
     }
 }
