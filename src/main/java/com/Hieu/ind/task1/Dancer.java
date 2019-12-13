@@ -4,9 +4,9 @@ public class Dancer {
 
     private int dancerId;
     private String dancerName;
-    private String dancerStyle;
+    private Style dancerStyle;
 
-    public Dancer(int dancerId, String dancerName, String dancerStyle){
+    public Dancer(int dancerId, String dancerName, Style dancerStyle){
         this.dancerId = dancerId;
         this.dancerName = dancerName;
         this.dancerStyle = dancerStyle;
@@ -18,7 +18,7 @@ public class Dancer {
     public String getDancerName() {
         return dancerName;
     }
-    public String getDancerStyle() {
+    public Style getDancerStyle() {
         return dancerStyle;
     }
 }
