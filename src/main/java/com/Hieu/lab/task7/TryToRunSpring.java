@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collections;
 
-
 @RestController
 @SpringBootApplication
 public class TryToRunSpring {
