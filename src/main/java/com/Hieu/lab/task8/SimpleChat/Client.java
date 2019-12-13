@@ -16,7 +16,7 @@ public class Client {
 
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             String msgin="", msgout="";
-            while (!msgin.equals("end")){
+            while (!msgout.equals("end")){
                 msgout = br.readLine(); // read client msg
                 dout.writeUTF(msgout);
 //                msgin = din.readUTF();

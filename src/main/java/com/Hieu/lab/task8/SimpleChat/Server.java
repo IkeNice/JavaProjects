@@ -27,7 +27,7 @@ public class Server {
                 System.out.println(msgin); // print client msg
 //                msgout = br.readLine(); // read server msg
 //                dout.writeUTF(msgout);
-                dout.flush();
+//                dout.flush();
             }
             s.close();
 
