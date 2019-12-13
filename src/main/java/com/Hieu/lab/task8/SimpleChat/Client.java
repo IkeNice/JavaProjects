@@ -8,6 +8,7 @@ import java.net.Socket;
 
 public class Client {
     public static void main(String[] args) {
+        System.out.println("Start writing message...");
         try{
 
             Socket s = new Socket("localhost",8000);
