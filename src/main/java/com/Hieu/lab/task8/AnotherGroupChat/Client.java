@@ -127,7 +127,7 @@ class ClientSomthing {
 
 public class Client {
 
-    public static String ipAddr = "192.168.1.70";
+    public static String ipAddr = "192.168.43.11";
     public static int port = 8000;
 
     //создание клиент-соединения с узананными адресом и номером порта

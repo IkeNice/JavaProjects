@@ -8,7 +8,7 @@ import java.io.InputStream;
 public class InputFile {
     public static void main(String[] args) throws Exception {
         try {
-            InputStream in = new FileInputStream("1.txt");
+            InputStream in = new FileInputStream("WCFiles/1.txt");
             while (in.available() > 0) {
                 System.out.println(in.read());
             }
